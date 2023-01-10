@@ -9,7 +9,7 @@
                         <lightning-button-icon size="x-small" icon-name={expandCollapseIcon}
                             alternative-text={label.Toggle_Details} onclick={toggleDetailSection}>
                         </lightning-button-icon>
-                        <lightning-icon if:true={hasIconName} size="small" icon-name={themeInfo.iconName}></lightning-icon>
+                        <lightning-icon if:true={hasIconName} size="small" icon-name={themeInfo.iconName} class="slds-timeline__icon"></lightning-icon>
                         <span if:false={hasIconName} class="slds-avatar slds-avatar--small" style={objectThemeColor}>
                             <img src={themeInfo.iconImgUrl}></img>
                         </span>
@@ -59,7 +59,7 @@
                                 <span class="slds-text-title slds-var-p-right_xx-small"><b>{subTitleLabel}</b></span>{subTitle}
                             </p>    
                         </template>
-                        <div if:true={expanded} class="slds-box slds-theme_shade slds-var-m-top_x-small slds-var-m-horizontal_xx-small slds-var-p-around_medium">
+                        <div if:true={expanded} class="slds-box slds-timeline__item_details slds-theme_shade slds-var-m-top_x-small slds-var-m-horizontal_xx-small slds-var-p-around_medium">
                             <template for:each={expandedFieldsToDisplay} for:item="fieldToDisplay">
                                 <lightning-output-field key={fieldToDisplay.apiName} field-name={fieldToDisplay.apiName}>
                                 </lightning-output-field>

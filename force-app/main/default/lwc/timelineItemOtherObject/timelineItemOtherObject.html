@@ -10,7 +10,7 @@
                     <lightning-button-icon if:true={expanded} size="x-small" icon-name="utility:switch"
                         alternative-text={label.Toggle_Details} onclick={toggleDetailSection}>
                     </lightning-button-icon>
-                    <lightning-icon if:true={hasIconName} size="small" style={objectThemeColor}
+                    <lightning-icon if:true={hasIconName} size="small" class="slds-timeline__icon" style={objectThemeColor}
                         icon-name={themeInfo.iconName}></lightning-icon>
                     <span if:false={hasIconName} class="slds-avatar slds-avatar--small" style={objectThemeColor}>
                         <img src={themeInfo.iconImgUrl}></img>
@@ -60,7 +60,7 @@
                     </div>
                     <template if:true={expanded}>
                         <div
-                            class="slds-box slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium">
+                            class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium">
                             <c-timeline-item-detail field-data={fieldData}></c-timeline-item-detail>
                         </div>
                     </template>

@@ -167,7 +167,20 @@ export default class TimelineItemTask extends NavigationMixin(LightningElement) 
         return `mailto:${this.firstRecipient}`;
     }
     get itemStyle() {
-        return this.expanded ? "slds-item_expandable slds-is-open" : "slds-item_expandable";
+        let iStyle = "slds-timeline__item_expandable";
+
+        if(this.taskSubtype === "Call"){
+            iStyle += " slds-timeline__item_call"
+        }else if(this.taskSubtype === "Email"){
+            iStyle += " slds-timeline__item_email"
+        }else{
+            iStyle += " slds-timeline__item_task"
+        }
+
+        if (this.expanded) {
+            iStyle += " slds-is-open"
+        } 
+        return iStyle
     }
 
     get iconName(){
