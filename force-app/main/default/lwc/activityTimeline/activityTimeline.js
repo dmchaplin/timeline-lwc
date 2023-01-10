@@ -16,6 +16,7 @@ import No_data_found from '@salesforce/label/c.No_data_found';
 import Error_loading_data from '@salesforce/label/c.Error_loading_data';
 import Invalid_parameters from '@salesforce/label/c.Invalid_parameters'
 import Either_recordId_or_configId_are_empty from '@salesforce/label/c.Either_recordId_or_configId_are_empty'
+
 import You from '@salesforce/label/c.You';
 import Notes from '@salesforce/label/c.Notes';
 import Upcoming from '@salesforce/label/c.Upcoming';

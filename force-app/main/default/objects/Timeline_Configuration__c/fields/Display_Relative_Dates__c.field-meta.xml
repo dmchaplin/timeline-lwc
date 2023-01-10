@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_Relative_Dates__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description></description>
+    <externalId>false</externalId>
+    <inlineHelpText>If unchecked dates for the "Date field" will be displayed in the date format current users's locale vs. relative dates like "3 mins ago" etc."</inlineHelpText>
+    <label>Display Relative Dates</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

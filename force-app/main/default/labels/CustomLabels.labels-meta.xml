@@ -25,6 +25,14 @@
         <value>Apply</value>
     </labels>
     <labels>
+        <fullName>Collapse_All</fullName>
+        <categories>Activity Timeline</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collapse All</shortDescription>
+        <value>Collapse All</value>
+    </labels>
+    <labels>
         <fullName>Date_Range</fullName>
         <categories>Activity Timeline</categories>
         <language>en_US</language>
@@ -56,6 +64,14 @@
         <shortDescription>Error loading data</shortDescription>
         <value>Error loading data</value>
     </labels>
+    <labels>
+        <fullName>Expand_All</fullName>
+        <categories>Activity Timeline</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expand_All</shortDescription>
+        <value>Expand_All</value>
+    </labels>    
     <labels>
         <fullName>Filter</fullName>
         <categories>Activity Timeline</categories>
@@ -121,6 +137,14 @@
         <value>Next 7 days</value>
     </labels>
     <labels>
+        <fullName>Notes</fullName>
+        <categories>Activity Timeline</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Notes</shortDescription>
+        <value>Notes</value>
+    </labels>    
+    <labels>
         <fullName>No_Subject</fullName>
         <categories>Activity Timeline</categories>
         <language>en_US</language>
@@ -151,6 +175,14 @@
         <protected>false</protected>
         <shortDescription>Refresh Data</shortDescription>
         <value>Refresh Data</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <categories>Activity Timeline</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
     </labels>
     <labels>
         <fullName>Select_Objects</fullName>
