@@ -80,3 +80,5 @@ SiteRegisterControllerTest.cls-meta.xml
 
 #Translation files
 fr.translation-meta.xml
+.sf/config.json
+sfdx-project.json
