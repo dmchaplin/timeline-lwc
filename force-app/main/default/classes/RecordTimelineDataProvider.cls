@@ -194,7 +194,7 @@ public with sharing class RecordTimelineDataProvider {
                 }
                 log.add('Notes SOQL:'+ soqlToExecute);
                 for(ContentNote noteDetail : Database.query(soqlToExecute)){
-                    notes.add(new ObjectNote(   noteDetail.TextPreview,noteDetail.Content.toString(),
+                    notes.add(new ObjectNote(   noteDetail.Title,noteDetail.Content.toString(),
                                                 noteDetail.CreatedBy.Name,noteDetail.CreatedBy.Id, noteDetail.CreatedDate,
                                                 noteDetail.Id,
                                                 noteDetail.Id

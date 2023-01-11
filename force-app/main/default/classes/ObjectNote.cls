@@ -1,6 +1,6 @@
 public class ObjectNote {
     @AuraEnabled
-    public String textPreview { get; set;}
+    public String title { get; set;}
     @AuraEnabled
     public String body { get; set;}
     @AuraEnabled
@@ -15,7 +15,7 @@ public class ObjectNote {
     public Id contentDocId;
 
     public ObjectNote(String txt,String body,String createdName, Id createdId,Datetime createdDate,Id recordId,Id contentDocId ) {
-        this.textPreview=txt;
+        this.title=txt;
         this.body=body;
         this.createdByName=createdName;
         this.createdById=createdId;

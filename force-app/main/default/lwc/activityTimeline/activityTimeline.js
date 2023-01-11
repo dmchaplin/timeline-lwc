@@ -311,7 +311,7 @@ export default class ActivityTimeline extends LightningElement {
         //For backwards compatibility, the default is "Record Detail"
         childRec.navigationBehaviour=config.Title_link_Navigate_to__c?config. Title_link_Navigate_to__c:'Record Detail';
         if(childRec.object==='ContentDocumentLink'){
-            childRec.title = recordData.textPreview;
+            childRec.title = recordData.title;
             childRec.body = recordData.body;
             childRec.isNote = true;
             childRec.dateValueDB = recordData.createdDate;
