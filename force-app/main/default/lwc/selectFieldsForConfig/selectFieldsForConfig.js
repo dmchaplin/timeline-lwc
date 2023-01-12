@@ -38,8 +38,8 @@ export default class SelectFieldsForConfig extends LightningElement {
     @wire(getObjectInfo, { objectApiName: '$childObjectApiName' })
     getFieldNamesForObjectResponse({ error, data }) {
         if (data) {
-            this.iconImageUrl = data.themeInfo.iconUrl;
-            this.objectColor = data.themeInfo.color;
+            this.iconImageUrl = data.themeInfo? data.themeInfo.iconUrl: null;
+            this.objectColor = data.themeInfo? data.themeInfo.color: null;
             let fields = data.fields;
             let fieldResults = [];
             for (let field in fields) {
